@@ -23,6 +23,8 @@ class Zenquote extends React.Component{
            <p>
            "{this.state.quote}"    
            </p>
+           
+
         </div>
     }
 }
