@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size:150px;
 }
 
 .App-logo {
@@ -35,4 +36,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@keyframes loader{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@keyframes jump{
+  0%{
+    
+  }
+  100%{
+    transform:translate(0,20px);
+}
+  
+}
+.load{
+  margin:auto;
+  height:50px;
+  width:50px;
+  border:15px solid blue;
+  border-top-color:black;
+  border-bottom-color:black;
+  animation:loader 2s linear infinite;
+  border-radius:50%;
+}
+
+p{
+  margin:auto;
+  font-size:150px;
+  text-align:center;
+  
+}
+.btn{
+  animation:jump 2s linear infinite;
+}
+
+.quote{
+  color: blue;
 }
